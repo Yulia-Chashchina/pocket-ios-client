@@ -17,12 +17,75 @@ class SignUpViewController: UIViewController {
 
     var user: User!
     
+    let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "screenImage")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    private let backButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Back", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.setTitleColor(.white, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = #colorLiteral(red: 0.2071147859, green: 0.5941259265, blue: 0.8571158051, alpha: 1)
+        setupLayout()
+        setupBackButton()
+        
+        
     }
     
+    private func setupBackButton() {
+        view.addSubview(backButton)
+       
+        backButton.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
+        
+        NSLayoutConstraint.activate([
+            backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            backButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20)
+            ])
+    }
+    
+    private func setupLayout() {
+        let topImageContainerView = UIView()
+        view.addSubview(topImageContainerView)
+        topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
+        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+       topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        topImageContainerView.addSubview(imageView)
+       
+        imageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.65).isActive = true
+        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1).isActive = true
+        
+        loginTextField.placeholder = "Login"
+        emailTextField.placeholder = "E-mail"
+        passwordTextField.placeholder = "Password"
+        
+        loginTextField.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
+        loginTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+
+        emailTextField.topAnchor.constraint(equalTo: loginTextField.bottomAnchor, constant: 20).isActive = true
+        emailTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 20).isActive = true
+        passwordTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        signUpButton.titleLabel?.font = UIFont(name: "Roboto.regular", size: 16)
+        signUpButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -43).isActive = true
+        signUpButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        signUpButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+    }
+    
+
     @IBAction func backButtonPress(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

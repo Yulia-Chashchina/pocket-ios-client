@@ -18,16 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch screen" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-Vb-Pk7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-qR-UGo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-wB-cFa">
+                                <rect key="frame" x="38" y="43" width="299" height="583"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-pX-2kU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 2" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-gk-j7t">
+                                <rect key="frame" x="137" y="177" width="101" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ggd-gk-j7t" secondAttribute="height" multiplier="101:100" id="lyg-BY-NPJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pocket messenger For geeks by geeks" translatesAutoresizingMaskIntoConstraints="NO" id="ubj-3X-BVs">
+                                <rect key="frame" x="78" y="458" width="218" height="47"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yo1-Vb-Pk7" secondAttribute="trailing" id="6rQ-wh-avq"/>
-                            <constraint firstItem="yo1-Vb-Pk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EaA-Dy-Ujc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="yo1-Vb-Pk7" secondAttribute="top" constant="20" id="Uxc-Ys-0TO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yo1-Vb-Pk7" secondAttribute="bottom" id="s1y-v4-wU9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ubj-3X-BVs" secondAttribute="trailing" constant="79" id="3qT-gK-OwZ"/>
+                            <constraint firstItem="5gu-qR-UGo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="690-6j-EmQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Tn-wB-cFa" secondAttribute="trailing" constant="38" id="7ts-Gk-ofA"/>
+                            <constraint firstItem="ggd-gk-j7t" firstAttribute="centerX" secondItem="a7L-pX-2kU" secondAttribute="centerX" id="DvK-Gx-oGN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubj-3X-BVs" secondAttribute="bottom" constant="162" id="Fz9-3t-vwU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a7L-pX-2kU" secondAttribute="bottom" constant="317" id="IFW-8T-lb9"/>
+                            <constraint firstItem="5gu-qR-UGo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="P59-eI-BcN"/>
+                            <constraint firstItem="ubj-3X-BVs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="RBe-jt-L0f"/>
+                            <constraint firstItem="9Tn-wB-cFa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="RHL-OY-hH9"/>
+                            <constraint firstItem="ggd-gk-j7t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="SNc-0r-eT3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ggd-gk-j7t" secondAttribute="bottom" constant="390" id="Y7v-gF-jmQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Tn-wB-cFa" secondAttribute="bottom" constant="41" id="YQU-ww-lVT"/>
+                            <constraint firstItem="9Tn-wB-cFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="ZmM-cb-Zfw"/>
+                            <constraint firstItem="a7L-pX-2kU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aGG-UK-B1a"/>
+                            <constraint firstItem="a7L-pX-2kU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ard-ix-da3"/>
+                            <constraint firstItem="5gu-qR-UGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hyf-o5-In2"/>
+                            <constraint firstItem="a7L-pX-2kU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pXA-9k-qKX"/>
+                            <constraint firstItem="5gu-qR-UGo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wUn-QO-CEh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +66,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch screen" width="383" height="675"/>
+        <image name="Ellipse" width="375" height="361"/>
+        <image name="Ellipse 2" width="100" height="100"/>
+        <image name="Pocket messenger For geeks by geeks" width="216" height="47"/>
+        <image name="Rectangle" width="375" height="667"/>
+        <image name="Rectangle 2" width="308" height="533"/>
     </resources>
 </document>
